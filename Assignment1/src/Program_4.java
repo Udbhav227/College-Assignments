@@ -1,6 +1,6 @@
 public class Program_4 {
     public static void main(String[] args) {
-        System.out.println("Lionel\nAndres\nMessi\nCuccitini");
+        System.out.print("Lionel\nAndres\nMessi\nCuccitini");
     }
 }
 
