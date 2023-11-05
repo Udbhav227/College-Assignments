@@ -4,7 +4,8 @@ This repository contains solutions to the laboratory assignments for SOA ITER CS
 
 ## 🗂️ Table of Contents
 
-- Under Construction 🚧
+- [Assignment 1 solution](Assignment1/src)
+- [Assignment 2 solution] Working on it!
 
 ## 🚀 Getting Started
 
