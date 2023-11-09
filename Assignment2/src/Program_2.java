@@ -10,7 +10,7 @@ public class Program_2 {
         int m = km * 1000;
         int cm = m * 100;
         double ft = km * 3280.8399;
-        double in = ft * 12;
+        double in = km * 39370.0787;
 
         System.out.println("165 km is " + m + " meters");
         System.out.println("165 km is " + ft + " feet");
