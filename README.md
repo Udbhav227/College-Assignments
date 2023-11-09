@@ -1,6 +1,6 @@
-# 📚 College Laboratory Assignments Repository
+# 📚 ICP Laboratory Assignments Repository
 
-This repository contains solutions to the laboratory assignments for SOA ITER CSE/CSIT (1st semester as of now). Each assignment is organized into its respective folder.
+This repository contains solutions to the ICP lab assignments for SOA ITER CSE/CSIT (1st semester as of now). Each assignment is organized into its respective folder.
 
 ## 🗂️ Table of Contents
 
