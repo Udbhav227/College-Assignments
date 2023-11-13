@@ -6,8 +6,8 @@ public class Program_6 {
 
         System.out.print("Enter the time in seconds: ");
         double time = sc.nextDouble();
-
-        double dist = 0.5 * 32.174 * Math.pow(time, 2);
+        final double g =  32.174 ;
+        double dist = 0.5 * g * Math.pow(time, 2);
 
         System.out.printf("Distance travelled: %.3f", dist);
 
