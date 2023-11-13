@@ -12,10 +12,10 @@ public class Program_2 {
         double ft = km * 3280.8399;
         double in = ft * 12;
 
-        System.out.println("165 km is " + m + " meters");
-        System.out.println("165 km is " + ft + " feet");
-        System.out.println("165 km is " + in + " inches");
-        System.out.println("165 km is " + cm + " centimeters");
+        System.out.println(km + " km is " + m + " meters");
+        System.out.println(km + " km is " + ft + " feet");
+        System.out.println(km + " km is " + in + " inches");
+        System.out.println(km + " km is " + cm + " centimeters");
 
         sc.close();
     }
