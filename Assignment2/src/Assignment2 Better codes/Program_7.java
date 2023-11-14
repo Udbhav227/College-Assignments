@@ -1,12 +1,12 @@
 public class Program_7 {
     public static void main(String[] args) {
         int a = 1, b = 2;
-        System.out.printf("%-5s %-5s %-8s %n", "a", "b", "pow(a, b)");
-        System.out.printf("%-5d %-5d %-8d %n", a, b, (int) Math.pow(a, b));
-        System.out.printf("%-5d %-5d %-8d %n", ++a, ++b, (int) Math.pow(a, b));
-        System.out.printf("%-5d %-5d %-8d %n", ++a, ++b, (int) Math.pow(a, b));
-        System.out.printf("%-5d %-5d %-8d %n", ++a, ++b, (int) Math.pow(a, b));
-        System.out.printf("%-5d %-5d %-8d %n", ++a, ++b, (int) Math.pow(a, b));
+        System.out.printf("%-5s %-5s %s %n", "a", "b", "pow(a, b)");
+        System.out.printf("%-5d %-5d %d %n", a, b, (int) Math.pow(a, b));
+        System.out.printf("%-5d %-5d %d %n", ++a, ++b, (int) Math.pow(a, b));
+        System.out.printf("%-5d %-5d %d %n", ++a, ++b, (int) Math.pow(a, b));
+        System.out.printf("%-5d %-5d %d %n", ++a, ++b, (int) Math.pow(a, b));
+        System.out.printf("%-5d %-5d %d %n", ++a, ++b, (int) Math.pow(a, b));
     }
 }
 
