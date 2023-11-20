@@ -1,12 +1,7 @@
-import java.util.Scanner;
 
 public class HA_1 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter number of minutes: ");
-        int min = sc.nextInt();
-
+        int min = Integer.parseInt(args[0]);
         int years = min / (24 * 60 * 365);
         int days = min % (24 * 60 * 365) / (24 * 60);
 
