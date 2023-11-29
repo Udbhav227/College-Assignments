@@ -6,6 +6,8 @@ This repository contains solutions to the ICP lab assignments for SOA ITER CSE/C
 
 - [Assignment 1 solution](Assignment1/src)
 - [Assignment 2 solution](Assignment2/src)
+- [Assignment 3 solution](Assignment3/)
+
 
 ## 🚀 Getting Started
 
