@@ -11,12 +11,12 @@ public class Program_10 {
         String grade;
 
         switch (mark / 10) {
-            case (10), (9) -> grade = "O";
-            case (8) -> grade = "A";
-            case (7) -> grade = "B";
-            case (6) -> grade = "C";
-            case (5) -> grade = "D";
-            case (4) -> grade = "E";
+            case 10, 9 -> grade = "O";
+            case 8 -> grade = "A";
+            case 7 -> grade = "B";
+            case 6 -> grade = "C";
+            case 5 -> grade = "D";
+            case 4 -> grade = "E";
             default -> grade = "F";
         }
 
