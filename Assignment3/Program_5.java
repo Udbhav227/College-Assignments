@@ -1,3 +1,5 @@
+// i will update this code using nested if-else
+
 import java.util.Scanner;
 
 public class Program_5 {
