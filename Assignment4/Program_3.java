@@ -13,7 +13,6 @@ public class Program_3 {
         do {
             int random = (int) (Math.random() * n + 1);
             System.out.print(random + " ");
-
             sum += random;
             count++;
         } while (count <= n);
