@@ -9,8 +9,8 @@ public class Program_2 {
         int n = number, sum = 0;
 
         while (n >= 1) {
-            sum = sum + n % 10;
-            n = n / 10;
+            sum += n % 10;
+            n /= 10;
         }
 
         if (sum % 9 == 0) {
