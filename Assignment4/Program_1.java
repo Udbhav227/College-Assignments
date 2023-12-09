@@ -18,6 +18,7 @@ public class Program_1 {
             System.out.print(i + " ");
         }
 
+        System.out.print();
         System.out.print("The sum of displayed numbers is: " + sum);
 
         sc.close();
