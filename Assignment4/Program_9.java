@@ -7,9 +7,18 @@ public class Program_9 {
         System.out.print("Enter an integer number: ");
         int n = sc.nextInt();
 
-        String result = Integer.toString(n).replaceAll("0", "");
+        int num = n, result = 0, placeValue = 1;
 
-        System.out.println("After removing 0 from number " + n + ", the new number is " + result);
+        while (n != 0) {
+            int lastDigit = n % 10;
+            if (lastDigit != 0) {
+                result += lastDigit * placeValue;
+                placeValue *= 10;
+            }
+            n /= 10;
+        }
+
+        System.out.println("After removing 0 from number " + num + ", the new number is " + result);
 
         sc.close();
     }
