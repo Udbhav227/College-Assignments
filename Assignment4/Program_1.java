@@ -13,12 +13,14 @@ public class Program_1 {
         System.out.print("Enter third number: ");
         int c = sc.nextInt();
 
+        int sum = 0;
+        
         for (int i = a; i <= b; i = i + c){
             sum += i;
-            System.out.print(i + " ");
+            System.out.println(i + " ");
         }
 
-        System.out.print();
+        System.out.println();
         System.out.print("The sum of displayed numbers is: " + sum);
 
         sc.close();
