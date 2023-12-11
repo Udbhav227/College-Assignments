@@ -5,11 +5,11 @@ public class Program_7 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter a number: ");
-        int number = scanner.nextInt();
+        int n = scanner.nextInt();
 
-        System.out.println("Multiplication table of " + number + ":");
+        System.out.println("Multiplication table of " + n + ":");
         for (int i = 1; i <= 10; i++) {
-            System.out.println(number + " x " + i + " = " + (number * i));
+            System.out.println(n + " \u00d7 " + i + " = " + (n * i));
         }
 
         scanner.close();
