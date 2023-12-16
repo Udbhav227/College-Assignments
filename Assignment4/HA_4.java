@@ -11,7 +11,7 @@ public class HA_4 {
         long oddProduct = 1L;
 
         for (int i = 1; i <= n; i++) {
-            if (i % 2 == 0) evenSum += i;
+            if ((i & 1) == 0) evenSum += i;
             else oddProduct *= i;
         }
 
