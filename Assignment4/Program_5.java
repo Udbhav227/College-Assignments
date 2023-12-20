@@ -1,4 +1,4 @@
-
+// one close bracket missing in this code I'll fix that soon 
 import java.util.Scanner;
 
 public class Program_5 {
