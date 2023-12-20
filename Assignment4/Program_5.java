@@ -1,4 +1,4 @@
-// I will change this code with more optimised solution soon (this is also correct)
+
 import java.util.Scanner;
 
 public class Program_5 {
