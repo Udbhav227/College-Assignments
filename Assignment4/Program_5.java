@@ -1,3 +1,4 @@
+// I will change this code with more optimised solution soon (this is also correct)
 import java.util.Scanner;
 
 public class Program_5 {
@@ -9,7 +10,7 @@ public class Program_5 {
 
         int sum = 0;
 
-        for (int i = 1; i < n; i++) {
+        for (int i = 1; i < n/2; i++) {
             if (n % i == 0) {
                 sum += i;
             }
