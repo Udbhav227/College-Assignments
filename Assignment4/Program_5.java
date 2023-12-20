@@ -1,4 +1,3 @@
-// one close bracket missing in this code I'll fix that soon 
 import java.util.Scanner;
 
 public class Program_5 {
@@ -10,12 +9,13 @@ public class Program_5 {
 
         int sum = 0;
 
-        for (int j = 1; j <= Math.sqrt(i); j++) {
-        if (i % j == 0) {
-          sum += j;
-          if (i != i / j) {
-            sum += i / j;
-          }
+        for (int i = 1; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+              sum += i;
+              if (n != n / i) {
+                sum += n / i;
+              }
+            }
         }
 
         if (n == sum)
@@ -29,6 +29,6 @@ public class Program_5 {
 
 /*
     Output:
-        Enter a number: 420
-        420 is not a perfect number.
+        Enter a number: 496
+        496 is a perfect number.
  */
