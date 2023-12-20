@@ -10,10 +10,12 @@ public class Program_5 {
 
         int sum = 0;
 
-        for (int i = 1; i < n/2; i++) {
-            if (n % i == 0) {
-                sum += i;
-            }
+        for (int j = 1; j <= Math.sqrt(i); j++) {
+        if (i % j == 0) {
+          sum += j;
+          if (i != i / j) {
+            sum += i / j;
+          }
         }
 
         if (n == sum)
