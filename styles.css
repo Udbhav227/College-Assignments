@@ -3,7 +3,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     margin: 0;
     overflow-y: auto;
 }
@@ -38,13 +38,14 @@ body{
     text-align: center;
     margin-top: 70px;
     margin-bottom: 0;
-    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .description {
     font-style: italic;
+    font-family: cursive;
     margin-top: 9px;
-    font-size: 16;
+    font-size: 16px;
 }
 
 .boxes {
@@ -54,7 +55,9 @@ body{
 }
 
 .box-item {
-    font-size: 21px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
     width: 313.5px;
     height: 92.2px;
     margin-inline: 30px;
@@ -68,6 +71,11 @@ body{
     box-shadow: 11px 11px ;
     transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
+
+.box-item:active {
+    transform: translateY(2px);
+    box-shadow: 0 0 0 1.5px black;
+  }
 
 a {
     text-decoration: none;
