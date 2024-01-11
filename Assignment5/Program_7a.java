@@ -1,12 +1,11 @@
 public class Program_7a {
     public static void main(String[] args) {
-        char start = 'A', end = 'E';
-        for (char ch = 'A'; ch <= end; ch++) {
-            for (char curr = 'A'; curr <= ch; curr++) {
-                System.out.print(start + " ");
-                start++;
+        int row = 5;
+        for (int i = 1; i <= row; i++) {
+            char ch = 'A';
+            for (int j = 1; j <= i; j++) {
+                System.out.print(ch++ + " ");
             }
-
             System.out.println();
         }
     }
@@ -15,8 +14,8 @@ public class Program_7a {
 /*
     OUTPUT:
         A
-        B C
-        D E F
-        G H I J
-        K L M N O
+        A B
+        A B C
+        A B C D
+        A B C D E
  */
