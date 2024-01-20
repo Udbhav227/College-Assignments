@@ -7,9 +7,9 @@ public class Program_5 {
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
 
-        int sum = 0;
+        int sum = 1 , sq_root = Math.sqrt(n);
 
-        for (int i = 1; i <= Math.sqrt(n); i++) {
+        for (int i = 2; i <= sq_root; i++) {
             if (n % i == 0) {
               sum += i;
               if (n != n / i) {
