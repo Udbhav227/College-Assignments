@@ -7,7 +7,7 @@ public class Program_5 {
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
 
-        int sum = 1 , sq_root = Math.sqrt(n);
+        int sum = 1 , sq_root = (int)(Math.sqrt(n));
 
         for (int i = 2; i <= sq_root; i++) {
             if (n % i == 0) {
