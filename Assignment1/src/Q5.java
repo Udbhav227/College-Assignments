@@ -1,5 +1,7 @@
 public class Q5 {
     public static void main(String[] args) {
+        // Method -1 
+        
         int W = 1;
         int G = 2;
         int K = 3;
@@ -10,7 +12,9 @@ public class Q5 {
         System.out.println("G = " + G);
         System.out.println("K = " + K);
         System.out.println("A = " + A);
-        System.out.println("");
+        
+        System.out.println();
+        
         // swapping W and G variables
         W = W + G;
         G = W - G;
@@ -33,6 +37,38 @@ public class Q5 {
         System.out.println("A = " + A);
     }
 }
+       /* Method - 2 
+
+        public class Q5 {
+           public static void main(String[] args) {
+        
+        int W = 1 , G = 2 , K = 3 , A = 4;
+        System.out.println("Before swapping : ");
+        System.out.println("W = "+W);
+        System.out.println("G = "+G);
+        System.out.println("K = "+K);
+        System.out.println("A = "+A);
+
+        System.out.println();
+
+        W = W + G + K + A ;
+        A = W - ( G + K + A );
+        K = W - ( G + K + A );
+        G = W - ( G + K + A );
+        W = W - ( G + K + A );
+       
+        System.out.println("After swapping : ");
+        System.out.println("W = "+W);
+        System.out.println("G = "+G);
+        System.out.println("K = "+K);
+        System.out.println("A = "+A);  
+        }
+    }                                      */
+    
+
+
+
+
 
 /*
   Output
