@@ -26,7 +26,7 @@ If you are a student working on similar assignments, feel free to use this repos
 
 If you'd like to contribute or suggest improvements to the solutions, feel free to open an issue or create a pull request. 🌟
 
-## ☕ Help me
+## ☕ Support me
 
 If you like my work please support me
 <p><a href="https://www.buymeacoffee.com/udbhav"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="40" width="160" alt="udbhav" /></a></p>
