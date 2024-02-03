@@ -2,6 +2,10 @@
 
 This repository contains solutions to the ICP lab assignments for SOA ITER CSE/CSIT (1st semester as of now). Each assignment is organized into its respective folder.
 
+## 🚀 Getting Started
+
+You can navigate to each assignment's folder to find the solution files and any additional resources provided.
+
 ## 🗂️ Table of Contents
 
 - [Assignment 1 solution](Assignment1/src)
@@ -13,10 +17,6 @@ This repository contains solutions to the ICP lab assignments for SOA ITER CSE/C
 - [Assignment 7 solution](Assignment7/)
 - [ICP 1st Semester Project](https://github.com/Udbhav227/College-Assignments/tree/5479cd1e21d903e2d58c056e0bbb439c6115dca1/ICP%20Sem%201%20Project/Minor%20Project%201)
 
-
-## 🚀 Getting Started
-
-You can navigate to each assignment's folder to find the solution files and any additional resources provided.
 
 ## 📝 Usage
 
