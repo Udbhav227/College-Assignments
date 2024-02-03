@@ -28,5 +28,5 @@ If you'd like to contribute or suggest improvements to the solutions, feel free 
 
 ## ☕ Support me
 
-If you like my work please support me
+If you found this useful you can support me at udbhav751@paytm
 <p><a href="https://www.buymeacoffee.com/udbhav"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="40" width="160" alt="udbhav" /></a></p>
