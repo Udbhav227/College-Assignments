@@ -12,7 +12,7 @@ public class Program_3 {
 
         System.out.print("Enter number to be searched: ");
         int n = sc.nextInt();
-        int count = 0E;
+        int count = 0;
         for (int i : arr) {
             if (i == n) {
                 count++;
