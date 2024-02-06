@@ -2,7 +2,7 @@
 
 This repository contains solutions to the ICP lab assignments for SOA ITER CSE/CSIT (1st semester as of now). Each assignment is organized into its respective folder.
 
-![](https://komarev.com/ghpvc/?username=your-github-username&abbreviated=true)
+![](https://komarev.com/ghpvc/?username=Udbhav227&abbreviated=true)
 
 ## 🚀 Getting Started
 
