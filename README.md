@@ -10,7 +10,7 @@ You can navigate to each assignment's folder to find the solution files and any 
 
 ## 🗂️ Table of Contents
 
-- [1st Semester](Sem 1)
+- [1st Semester](https://github.com/Udbhav227/College-Assignments/tree/main/Sem%201)
 - [2nd Semester](Sem 2)
 
 
