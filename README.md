@@ -10,8 +10,8 @@ You can navigate to each assignment's folder to find the solution files and any 
 
 ## 🗂️ Table of Contents
 
-- [Assignment 1 solution](Assignment1/src)
-- [Assignment 2 solution](Assignment2/src)
+- [1st Semester](Sem 1)
+- [2nd Semester](Sem 2)
 
 
 ## 📝 Usage
