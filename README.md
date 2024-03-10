@@ -1,6 +1,6 @@
-# 📚 ICP Laboratory Assignments Repository
+# 📚 1st Year Laboratory Assignments Repository
 
-This repository contains solutions to the ICP lab assignments for SOA ITER CSE/CSIT (1st year as of now). Each assignment is organized into its respective folder.
+This repository contains solutions to the ICP and DSA lab assignments for SOA ITER CSE/CSIT (1st year as of now). Each assignment is organized into its respective folder.
 
 ![](https://komarev.com/ghpvc/?username=Udbhav227&abbreviated=true)
 
