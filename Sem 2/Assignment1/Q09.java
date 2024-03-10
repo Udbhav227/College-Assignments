@@ -12,11 +12,12 @@ public class Q09 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        double[][] arr = new double[4][4];
+        int row = 4, col = 4;
+        double[][] arr = new double[row][col];
 
         System.out.print("Enter arr 4-by-4 matrix row by row: ");
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 4; j++) {
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
                 arr[i][j] = sc.nextDouble();
             }
         }
