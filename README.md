@@ -11,7 +11,8 @@ You can navigate to each assignment's folder to find the solution files and any 
 ## 🗂️ Table of Contents
 
 Second semester assignment wise:
-- [DSA Assignment1](https://github.com/Udbhav227/College-Assignments/tree/main/Sem%202/Assignment1)
+- [DSA Assignment 1](https://github.com/Udbhav227/College-Assignments/tree/main/Sem%202/Assignment1)
+- [DSA Assignment 2](https://github.com/Udbhav227/College-Assignments/tree/main/Sem%202/Assignment2)
 
 Semester wise:
 - [1st Semester](https://github.com/Udbhav227/College-Assignments/tree/main/Sem%201)
