@@ -1,4 +1,6 @@
-public class Person {
+import java.util.Scanner;
+
+class Person {
     String name;
     int age;
 
@@ -12,8 +14,6 @@ public class Person {
         System.out.println("Age: " + age);
     }
 }
-
-import java.util.Scanner;
 
 public class Q1 {
     public static void main(String[] args) {
@@ -36,7 +36,7 @@ public class Q1 {
         if (p1.age < p2.age) {
             System.out.println(p1.name + " is younger than " + p2.name);
         } else if (p1.age > p2.age) {
-            System.out.println(p2.name + " is younger than " + p1.name);
+            System.out.println(p1.name + " is younger than " + p1.name);
         } else {
             System.out.println("Both persons are of the same age.");
         }
@@ -53,6 +53,5 @@ public class Q1 {
  *      Age: 20
  *      Name: Akaay
  *      Age: 19
- *      Akaay is younger than Rohan
+ *      Rohan is younger than Rohan
  */
-
