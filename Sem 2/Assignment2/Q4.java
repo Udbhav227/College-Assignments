@@ -4,29 +4,30 @@ class Deposit {
     double rate;
     double totalAmt;
 
-    public Deposit() {
-        this.principal = 0;
-        this.time = 0;
-        this.rate = 0.0;
-        this.totalAmt = 0.0;
+    Deposit() {
+        this.principal = 1000;
+        this.time = 1;
+        this.rate = 3.0;
     }
 
-    public Deposit(long principal, int time, double rate) {
+    Deposit(long principal, int time, double rate) {
         this.principal = principal;
         this.time = time;
         this.rate = rate;
         calcAmt();
     }
 
-    public Deposit(long principal, int time) {
+    Deposit(long principal, int time) {
         this.principal = principal;
         this.time = time;
+        this.rate = 3.0;
         calcAmt();
     }
 
-    public Deposit(long principal, double rate) {
+    Deposit(long principal, double rate) {
         this.principal = principal;
         this.rate = rate;
+        this.time = 1;
         calcAmt();
     }
 
@@ -52,6 +53,8 @@ public class Q4 {
 
         Deposit deposit3 = new Deposit(5000, 10.0);
 
+        Deposit deposit4 = new Deposit();
+
         System.out.println("Deposit 1:");
         deposit1.display();
 
@@ -60,26 +63,35 @@ public class Q4 {
 
         System.out.println("\nDeposit 3:");
         deposit3.display();
+
+        System.out.println("\nDeposit 4:");
+        deposit1.display();
     }
 }
 
 /*
- *  Output:
- *      Deposit 1:
- *      Principal: 10000
- *      Time: 5 years
- *      Rate: 8.5%
- *      Total Amount: 14250.0
- *
- *      Deposit 2:
- *      Principal: 20000
- *      Time: 2 years
- *      Rate: 0.0%
- *      Total Amount: 20000.0
- *
- *      Deposit 3:
- *      Principal: 5000
- *      Time: 0 years
- *      Rate: 10.0%
- *      Total Amount: 5000.0
+    Output:
+        Deposit 1:
+        Principal: 10000
+        Time: 5 years
+        Rate: 8.5%
+        Total Amount: 14250.0
+
+        Deposit 2:
+        Principal: 20000
+        Time: 2 years
+        Rate: 3.0%
+        Total Amount: 21200.0
+
+        Deposit 3:
+        Principal: 5000
+        Time: 1 years
+        Rate: 10.0%
+        Total Amount: 5500.0
+
+        Deposit 4:
+        Principal: 10000
+        Time: 5 years
+        Rate: 8.5%
+        Total Amount: 14250.0
  */
