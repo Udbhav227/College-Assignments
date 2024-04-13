@@ -53,5 +53,5 @@ public class Q1 {
  *      Age: 20
  *      Name: Akaay
  *      Age: 19
- *      Rohan is younger than Rohan
+ *      Akaay is younger than Rohan
  */
