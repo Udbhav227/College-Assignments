@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 class Commission {
@@ -9,9 +8,7 @@ class Commission {
     }
 
     double getCommission() {
-        if (sales < 0) {
-            throw new IllegalArgumentException("Invalid Input");
-        } else if (sales < 500) {
+        if (sales < 500) {
             return 0.02 * sales;
         } else if (sales < 5000) {
             return 0.05 * sales;
@@ -27,11 +24,11 @@ class HA1 {
         System.out.print("Enter sale: ");
         double sale = sc.nextDouble();
 
-        try {
+        if (sale < 0) {
+            System.out.println("Invalid Input");
+        } else {
             Commission commission = new Commission(sale);
             System.out.println("Commission amount: Rs. " + commission.getCommission());
-        } catch (IllegalArgumentException ex) {
-            System.out.println(ex.getMessage());
         }
         sc.close();
     }
