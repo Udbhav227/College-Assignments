@@ -16,7 +16,7 @@ class Student {
 }
 
 class MarksOutOfBoundException extends Exception {
-    public MarksOutOfBoundException(String message) {
+    MarksOutOfBoundException(String message) {
         super(message);
     }
 }
