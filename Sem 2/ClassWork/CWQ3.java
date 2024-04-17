@@ -9,8 +9,7 @@ abstract class Employee{
 	String lName;
 	double salary;
 	
-	public Employee(int empID, String fName, String lName, double salary) {
-		super();
+	Employee(int empID, String fName, String lName, double salary) {
 		this.empID = empID;
 		this.fName = fName;
 		this.lName = lName;
@@ -20,7 +19,7 @@ abstract class Employee{
 
 class Manager extends Employee implements EmpInterface {
 	double bonus;
-	public Manager(int empID, String fName, String lName, double salary, double bonus) {
+	Manager(int empID, String fName, String lName, double salary, double bonus) {
 		super(empID, fName, lName, salary);
 		if (bonus <= 0) {
 			throw new IllegalArgumentException("Bonus should be greater than 0");
