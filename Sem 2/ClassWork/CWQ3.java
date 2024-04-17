@@ -3,7 +3,7 @@ interface EmpInterface {
 	void giveBonus(double amount);
 }
 
-abstract class Employee{
+abstract class Employee {
 	int empID;
 	String fName;
 	String lName;
@@ -44,25 +44,5 @@ class Test {
 		
 		arr[0] = new Manager(420, "Walter ", "White ", 68000, 1000);
 		// And so on..
-	}
-}
-
-interface EmpInterface {
-	void displayEmp();
-	void giveBonus(double amount);
-}
-
-abstract class Employee{
-	int empID;
-	String fName;
-	String lName;
-	double salary;
-	
-	public Employee(int empID, String fName, String lName, double salary) {
-		super();
-		this.empID = empID;
-		this.fName = fName;
-		this.lName = lName;
-		this.salary = salary;
 	}
 }
