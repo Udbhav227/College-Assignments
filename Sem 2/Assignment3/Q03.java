@@ -4,7 +4,7 @@ class Student {
 
     Student(String name, int mark) throws MarksOutOfBoundException {
         this.name = name;
-        setMark(mark);
+        this.mark = mark;
     }
 
     void setMark(int mark) throws MarksOutOfBoundException {
