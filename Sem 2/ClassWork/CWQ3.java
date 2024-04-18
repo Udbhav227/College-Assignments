@@ -21,7 +21,7 @@ class Manager extends Employee implements EmpInterface {
 	double bonus;
 	Manager(int empID, String fName, String lName, double salary, double bonus) {
 		super(empID, fName, lName, salary);
-		if (bonus <= 0) {
+		if (bonus < 0) {
 			throw new IllegalArgumentException("Bonus should be greater than 0");
 		}
 		this.bonus = bonus;
