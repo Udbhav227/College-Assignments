@@ -160,7 +160,7 @@ public class LinkedList {
         }
     }
 
-    // b) iii. Deletion by registration number
+    // b) iv. Deletion by registration number
     public static Node DelByRegdNo(Node start) {
         Scanner sc = new Scanner(System.in);
 
