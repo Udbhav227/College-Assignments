@@ -289,7 +289,7 @@ public class LinkedList {
     }
 }
 
-// Coding this assignment was fun~
-// Also write your own code `if you want to` publish it on online platforms!
-// (Or at least give credits writing 250+ lines of code is no joke (T-T))
+// Coding this assignment was fun (and pain at same time)~
+// Also write your own code 'if you want to' publish it on online platforms!
+// (Or at least give credits writing 300+ lines of code is no joke (T-T))
 // Stop plagiarism! Bye! :D
