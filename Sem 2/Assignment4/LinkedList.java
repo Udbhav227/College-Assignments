@@ -231,7 +231,7 @@ public class LinkedList {
         return start;
     }
 
-    // Display all the nodes in the list
+    // h) Display all the nodes in the list
     public static void display(Node start) {
         Node temp = start;
         if (temp == null) {
