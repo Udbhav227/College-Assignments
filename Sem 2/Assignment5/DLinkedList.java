@@ -25,7 +25,6 @@ public class DLinkedList {
             return create(start, end);
         }
         DLinkedList.start = start;
-        DLinkedList.end = end;
         return end;
     }
 
@@ -43,7 +42,6 @@ public class DLinkedList {
             start.prev = newNode;
             start = newNode;
         }
-        DLinkedList.start = start;
         return start;
     }
 
@@ -62,8 +60,7 @@ public class DLinkedList {
             newNode.prev = end;
             end = newNode;
         }
-
-        DLinkedList.end = end;
+        
         return end;
     }
 
@@ -97,8 +94,7 @@ public class DLinkedList {
         }
         curr.next = newNode;
         newNode.prev = curr;
-
-        DLinkedList.end = end;
+        
         return start;
     }
 
@@ -115,7 +111,6 @@ public class DLinkedList {
             end = null;
         }
         System.out.println("Deleted node: " + temp.regd_no + " " + temp.mark);
-        DLinkedList.start = start;
         return start;
     }
 
@@ -134,7 +129,6 @@ public class DLinkedList {
         end = end.prev;
         end.next = null;
         System.out.println("Deleted node: " + temp.regd_no + " " + temp.mark);
-        DLinkedList.end = end;
         return start;
     }
 
@@ -164,7 +158,6 @@ public class DLinkedList {
             del.next.prev = temp;
         }
         System.out.println("Deleted node: " + del.regd_no + " " + del.mark);
-        DLinkedList.end = end;
         return start;
     }
 
