@@ -25,7 +25,7 @@ public class StackDemo1 {
 
     public static void display(int[] S, int top) {
         if (isEmpty(top)) {
-            System.out.println("Stack is empty!");
+            System.out.println("Stack is empty.");
             return;
         }
         System.out.print("Stack elements: [");
