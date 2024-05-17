@@ -17,6 +17,7 @@ Second semester assignment wise:
 - [DSA Assignment 4](https://github.com/Udbhav227/College-Assignments/tree/main/Sem%202/Assignment4)
 - [DSA Assignment 5](https://github.com/Udbhav227/College-Assignments/tree/main/Sem%202/Assignment5)
 - [DSA Assignment 6](https://github.com/Udbhav227/College-Assignments/tree/main/Sem%202/Assignment6)
+- [DSA Assignment 7](https://github.com/Udbhav227/College-Assignments/tree/main/Sem%202/Assignment7)
 
 Semester wise:
 - [1st Semester](https://github.com/Udbhav227/College-Assignments/tree/main/Sem%201)
