@@ -1,70 +1,110 @@
-import java.util.Scanner;
-
-class dlink {
+public class dLink {
     int info;
-    dlink next;
-    dlink prev;
+    dLink next;
+    dLink prev;
+
+    public dLink() {
+    }
+
+    public dLink(int x) {
+        info = x;
+        next = null;
+        prev = null;
+    }
 }
 
 public class DLinkedList {
-    static dlink start = null;
+    static dLink start = new dLink();
     static Scanner sc = new Scanner(System.in);
-    public static void create(dlink node) {
+
+    public static void create(dLink node) {
         System.out.print("Enter value: ");
         node.info = sc.nextInt();
-        node.next = null;
-        node.prev = null;
-        System.out.print("Press 0 to exit any other key to continue: ");
+        System.out.print("Enter 0 to stop enter any other key to continue: ");
         int x = sc.nextInt();
         while (x != 0) {
-            dlink curr = new dlink();
             System.out.print("Enter value: ");
-            curr.info = sc.nextInt();
-            node.next = curr;
-            curr.prev = node;
-            node = curr;
-            System.out.print("Press 0 to exit any other key to continue: ");
+            dLink temp = new dLink(sc.nextInt());
+            node.next = temp;
+            temp.prev = node;
+            node = temp;
+            System.out.print("Enter 0 to stop enter any other key to continue: ");
             x = sc.nextInt();
+        }
+        System.out.println();
+    }
+
+    public static void insertBeg(dLink node) {
+        System.out.print("Enter value: ");
+        dLink temp = new dLink(sc.nextInt());
+        temp.next = node;
+        node.prev = temp;
+        start = temp;
+    }
+
+    public static void insertEnd(dLink node) {
+        System.out.print("Enter value: ");
+        dLink temp = new dLink(sc.nextInt());
+        while (node.next != null) {
+            node = node.next;
+        }
+        node.next = temp;
+        temp.prev = node;
+    }
+
+    public static void insertAt(dLink node) {
+        System.out.print("Enter value: ");
+        dLink temp = new dLink(sc.nextInt());
+        System.out.print("Enter position: ");
+        int pos = sc.nextInt();
+        if (pos == 1) {
+            temp.next = node;
+            node.prev = temp;
+            start = temp;
+        } else {
+            for (int i = 1; i < pos - 1; i++) {
+                node = node.next;
+            }
+            node.next.prev = temp;
+            temp.next = node.next;
+            node.next = temp;
+            temp.prev = node;
         }
     }
 
-    public static void display(dlink node) {
-        System.out.print("In forward: ");
-        dlink temp = new dlink();
+    public static void display(dLink node) {
         while (node != null) {
             System.out.print(node.info + " <-> ");
-            temp = node;
             node = node.next;
         }
-        System.out.print("null\nIn reverse: ");
-        node = temp;
-        while (node != null) {
-            System.out.print(node.info + " <-> ");
-            node = node.prev;
+        System.out.println("null\n");
+    }
+
+    public static void deleteBeg(dLink node) {
+        start = node.next;
+        node.prev = null;
+    }
+
+    public static void deleteEnd(dLink node) {
+        while(node.next.next != null) {
+            node = node.next;
+            node.prev = null;
         }
-        System.out.println("null");
+    }
+
+    public static void deleteAt(dLink node) {
+        System.out.print("Enter position: ");
+        int pos = sc.nextInt();
+        for (int i = 1; i < pos - 1; i++) {
+            node = node.next;
+        }
     }
 
     public static void main(String[] args) {
-       dlink node = new dlink();
-       start = node;
-       create(start);
-       display(start);
+        start = new dLink();
+        create(start);
+        display(start);
+        deleteBeg(start);
+        display(start);
     }
 }
-
-/*
-OUTPUT:
-    Enter value: 11
-    Press 0 to exit any other key to continue: 1
-    Enter value: 12
-    Press 0 to exit any other key to continue: 1
-    Enter value: 13
-    Press 0 to exit any other key to continue: 1
-    Enter value: 14
-    Press 0 to exit any other key to continue: 1
-    Enter value: 15
-    Press 0 to exit any other key to continue: 0
-    In forward: 11 <-> 12 <-> 13 <-> 14 <-> 15 <-> null
-    In reverse: 15 <-> 14 <-> 13 <-> 12 <-> 11 <-> null
- */
