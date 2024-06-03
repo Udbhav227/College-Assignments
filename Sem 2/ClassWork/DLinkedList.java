@@ -88,8 +88,8 @@ public class DLinkedList {
     public static void deleteEnd(dLink node) {
         while(node.next.next != null) {
             node = node.next;
-            node.prev = null;
         }
+        node.next = null;
     }
 
     public static void deleteAt(dLink node) {
