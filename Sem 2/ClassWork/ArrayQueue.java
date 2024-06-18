@@ -10,9 +10,6 @@ public class ArrayQueue {
         if (rear == MAX - 1) {
             System.out.println("Overflow");
         } else {
-            if (front == -1) {
-                front = 0;
-            }
             Q[++rear] = x;
         }
     }
