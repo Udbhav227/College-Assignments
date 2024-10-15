@@ -30,7 +30,3 @@ If you are a student working on similar assignments, feel free to use this repos
 ## 🤝 Contributing
 
 If you'd like to contribute or suggest improvements to the solutions, feel free to open an issue or create a pull request. 🌟
-
-## ☕ Support me
-
-If you want to support me you can always udbhav751@paytm ☕
