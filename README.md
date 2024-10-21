@@ -1,4 +1,4 @@
-# 📚 1st Year Laboratory Assignments Repository
+# 📚 ITER Laboratory Assignments Repository
 
 Solutions for our college's DSA and ICP lab assignments are available in this repository. Each assignment is organized into its respective folder.
 
