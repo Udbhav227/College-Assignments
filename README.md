@@ -1,6 +1,6 @@
 # 📚 ITER Laboratory Assignments Repository
 
-Solutions for our college's DSA and ICP lab assignments are available in this repository. Each assignment is organized into its respective folder.
+Solutions for our college's lab assignments are available in this repository. Each assignment is organized into its respective folder.
 
 ![](https://komarev.com/ghpvc/?username=Udbhav227&abbreviated=true)
 
