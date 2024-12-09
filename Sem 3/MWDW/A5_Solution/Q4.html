@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Background Image Hover</title>
+    <style>
+        .image-box {
+            width: 400px;
+            height: 300px;
+            background-image: url('https://via.placeholder.com/400x300/87CEEB/FFFFFF?text=Default+Image');
+            background-size: cover;
+            background-position: center;
+            border: 2px solid #333;
+            margin: 50px auto;
+            transition: background-image 0.3s ease;
+        }
+
+        .image-box:hover {
+            background-image: url('https://via.placeholder.com/400x300/FF6347/FFFFFF?text=Hover+Image');
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Hover Over the Box</h1>
+    <div class="image-box"></div>
+</body>
+</html>

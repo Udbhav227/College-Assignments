@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boxes with Hover Effect</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            display: inline-block;
+            color: #fff;
+            font-size: 18px;
+            line-height: 150px;
+            box-sizing: border-box;
+            transition: padding 0.3s ease, margin 0.3s ease;
+        }
+
+        .box1 {
+            background-color: #ff9999; 
+            border: 1px solid red;
+        }
+
+        .box2 {
+            background-color: #99ff99; 
+            border: 2px solid green;
+        }
+
+        .box3 {
+            background-color: #9999ff; 
+            border: 3px solid blue;
+        }
+
+        .box:hover {
+            padding: 30px; 
+            margin: 50px; 
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Hover Over the Boxes</h1>
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Styling Example</title>
+    <style>
+        /* I. Style box1 and box3 using Attribute Selectors */
+        [id="box1"], [id="box3"] {
+            background-color: #2ecc71; 
+            color: #ffffff;            
+            padding: 10px;             
+        }
+
+        /* II. Style the text content inside all boxes */
+        .box {
+            font-size: 14px;           
+            font-weight: bold;         
+        }
+
+        /* III. Add a solid border to box2 */
+        #box2 {
+            border: 2px dashed #3498db; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">This is Box 1</div>
+        <div class="box" id="box2">This is Box 2</div>
+        <div class="box" id="box3">This is Box 3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knowledge Base</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            font-family: 'Georgia', serif;
+            text-align: center;
+        }
+
+        ol {
+            list-style-type: decimal;
+            font-size: 1.2em;
+            padding-left: 20px;
+        }
+
+        ol li {
+            margin-bottom: 10px;
+        }
+
+        ol li a {
+            text-decoration: none;
+            color: #0073e6;
+        }
+
+        ol li a:hover {
+            text-decoration: underline;
+            color: #ff5733;
+        }
+
+        section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 1.8em;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: 0;
+            height: 3px;
+            background-color: #4CAF50;
+            margin: 20px 0;
+        }
+
+        dl {
+            margin: 15px 0;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #333;
+        }
+
+        dd {
+            margin-left: 20px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+
+        .back-to-top:hover {
+            background-color: #ff5733;
+        }
+
+        section {
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Knowledge Base</h1>
+    <ol>
+        <li><a href="#lists">Lists in HTML</a></li>
+        <li><a href="#linking">Linking in HTML</a></li>
+        <li><a href="#formatting">Text Formatting</a></li>
+        <li><a href="#selectors">CSS Selectors</a></li>
+        <li><a href="#pseudo-classes">CSS Pseudo-Classes</a></li>
+    </ol>
+
+    <section id="lists">
+        <h2>Lists in HTML</h2>
+        <img src="https://miro.medium.com/v2/resize:fit:1200/0*gzmBNTkgdt3-iQNH.jpg" alt="Lists in HTML">
+        <hr>
+        <p>HTML provides three types of lists: ordered, unordered, and definition lists. Each has its own use cases for organizing information.</p>
+        
+        <dl>
+            <dt>Ordered List</dt>
+            <dd>Displays items in a numbered order.</dd>
+            <dt>Unordered List</dt>
+            <dd>Displays items with bullet points.</dd>
+            <dt>Definition List</dt>
+            <dd>Defines terms and their descriptions.</dd>
+        </dl>
+    </section>
+
+    <section id="selectors">
+        <h2>CSS Selectors</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_SSpeTie_gkSdsZZ2tn6d9dAVS6zXFr6Agw&s" alt="CSS Selectors">
+        <hr>
+        <p>CSS selectors are used to select HTML elements to apply styles.</p>
+        
+        <dl>
+            <dt>Element Selector</dt>
+            <dd>Selects elements based on their tag name.</dd>
+            <dt>Class Selector</dt>
+            <dd>Selects elements based on their class.</dd>
+            <dt>ID Selector</dt>
+            <dd>Selects an element based on its ID.</dd>
+        </dl>
+    </section>
+
+    <section id="pseudo-classes">
+        <h2>CSS Pseudo-Classes</h2>
+        <img src="https://www.scaler.com/topics/images/pseudo-classes-in-css_thumbnail.webp" alt="CSS Pseudo-Classes">
+        <hr>
+        <p>Pseudo-classes are used to define the special state of an element.</p>
+        
+        <dl>
+            <dt>:hover</dt>
+            <dd>Applies styles when an element is hovered over.</dd>
+            <dt>:active</dt>
+            <dd>Applies styles when an element is clicked.</dd>
+            <dt>:focus</dt>
+            <dd>Applies styles when an element is focused.</dd>
+        </dl>
+    </section>
+
+    <a href="#top" class="back-to-top">Back to Top</a>
+</body>
+</html>

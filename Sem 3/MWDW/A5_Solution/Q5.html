@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .product-container {
+            width: 90%;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .product-image {
+            float: left;
+            width: 40%;
+            margin-right: 20px;
+        }
+
+        .product-description {
+            width: 55%;
+            float: left;
+        }
+
+        /* Product Specifications
+        .specifications ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        .specifications ul ul {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+
+        .specifications dl {
+            margin: 10px 0;
+        }
+
+        .specifications dt {
+            font-weight: bold;
+        }
+
+        .specifications dd {
+            margin-bottom: 10px;
+        } */
+
+        .reviews {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .reviews blockquote {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 15px 0;
+            background-color: #f9f9f9;
+        }
+
+        .reviews blockquote footer {
+            text-align: right;
+            font-style: italic;
+        }
+
+        pre {
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #eee;
+            white-space: pre-wrap;
+        }
+
+        .purchase-links {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .purchase-links a[href*="amazon"] {
+            color: #FF9900;
+        }
+
+        .purchase-links a[href*="ebay"] {
+            color: #0064D2;
+        }
+
+        .purchase-links a {
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .purchase-links a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+
+        .purchase-links a:focus {
+            outline: 2px solid #333;
+        }
+
+        .top-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <a href="#purchase-links" class="top-link">Jump to Purchase Links</a>
+
+    <h1>Product Page</h1>
+    <div class="product-container">
+        <img src="https://cdn.phonebunch.com/fullsize/2347%20(1).jpg" alt="Smartphone" class="product-image">
+        <div class="product-description">
+            <h2>Freedom 251</h2>
+            <p>The Freedom 251 features cutting-edge technology with an amazing camera, long-lasting battery, and a sleek design. This phone is perfect for both work and play.</p>
+            <h3>Product Specifications</h3>
+            <div class="specifications">
+                <ul>
+                    <li>Dimensions
+                        <ul>
+                            <li>Height: 6.0 inches</li>
+                            <li>Width: 3.0 inches</li>
+                            <li>Depth: 0.3 inches</li>
+                        </ul>
+                    </li>
+                    <li>Features
+                        <ul>
+                            <li>5G Connectivity</li>
+                            <li>48MP Camera</li>
+                            <li>Dual SIM Support</li>
+                        </ul>
+                    </li>
+                    <li>Materials
+                        <ul>
+                            <li>Aluminum Frame</li>
+                            <li>Corning Gorilla Glass</li>
+                        </ul>
+                    </li>
+                </ul>
+                <dl>
+                    <dt>Processor</dt>
+                    <dd>Qualcomm Snapdragon 888</dd>
+                    <dt>Storage</dt>
+                    <dd>128GB internal, expandable</dd>
+                    <dt>Battery</dt>
+                    <dd>5000mAh, 18W fast charging</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <h2>Customer Reviews</h2>
+    <div class="reviews">
+        <blockquote>
+            <p>"Amazing phone! The camera quality is excellent, and the battery lasts all day. Definitely worth the price."</p>
+            <footer>- Nico Bellic, 18 Feb, 2016</footer>
+        </blockquote>
+        <blockquote>
+            <p>"A great upgrade from my old phone. The 5G connectivity is fast, and the display is sharp and vibrant."</p>
+            <footer>- Ashish Udbhav, April 10, 2016</footer>
+        </blockquote>
+        <pre>
+The Freedom 251 is great!
+- Excellent performance
+- Affordable price
+- Fantastic battery life
+        </pre>
+    </div>
+
+    <h2 id="purchase-links">Where to Buy</h2>
+    <div class="purchase-links">
+        <ul>
+            <li><a href="https://www.amazon.com">Buy on Amazon</a></li>
+            <li><a href="https://www.ebay.com">Buy on eBay</a></li>
+            <li><a href="https://www.example.com">Buy on Official Website</a></li>
+        </ul>
+    </div>
+</body>
+</html>
