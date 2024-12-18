@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 500px;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+        .form-row {
+            width: 450px;
+            display: flex;
+            gap: 40px;
+            margin: 10px 0;
+        }
+
+        .form-element {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            padding: 4px 10px;
+        }
+
+        button {
+            background-color: #4c7faf;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px;
+            margin-bottom: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 150px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <title>SOA Registration Form</title>
+</head>
+<body>
+    <form action="">
+        <h2>SOA Registration Form</h2>
+        <img src="soa-logo.jpg" alt="SOA Logo" height="300px">
+        
+        <div class="form-row">
+            <div class="form-element">
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" pattern="[A-Za-z ]+" title="Only alphabets and spaces are allowed" required>
+            </div>
+            <div class="form-element">
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" pattern="[A-Za-z ]+" title="Only alphabets and spaces are allowed" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-element"min="2024-12-14">
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="form-element">
+                <label for="phno">Phone Number</label>
+                <input type="tel" name="phno" pattern="\d{10}" title="Phone number must be 10 digits" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-element">
+                <label for="score">SAAT Score</label>
+                <input type="text" name="score" pattern="\d+" title="Only numeric values are allowed" required>
+            </div>
+            <div class="form-element">
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" required>
+            </div>
+        </div>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .checkbox-group,
+        .dropdown-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .checkbox-group label {
+            display: inline-block;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .dropdown-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+
+        .dropdown-group option {
+            font-size: 16px;
+            padding: 5px;
+        }
+
+        .dropdown-group option:nth-child(1) {
+            font-family: 'Arial', sans-serif;
+            color: #ff5733; 
+        }
+
+        .dropdown-group option:nth-child(2) {
+            font-family: 'Courier New', monospace;
+            color: #3498db; /* Blue */
+        }
+
+        .dropdown-group option:nth-child(3) {
+            font-family: 'Georgia', serif;
+            color: #2ecc71; /* Green */
+        }
+
+        .dropdown-group option:nth-child(4) {
+            font-family: 'Tahoma', sans-serif;
+            color: #f39c12; /* Orange */
+        }
+
+        .dropdown-group option:nth-child(5) {
+            font-family: 'Verdana', sans-serif;
+            color: #8e44ad; /* Purple */
+        }
+
+        .dropdown-group option[value="rust"] {
+            font-family: 'Verdana', sans-serif;
+            color: crimson; /* Red */
+        }
+
+        .dropdown-group select:hover {
+            background-color: #eaeaea;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#">
+        <h2>Programming Languages Form</h2>
+
+        <div class="checkbox-group">
+            <label for="languages">Select your favorite programming languages:</label>
+            <label><input type="checkbox" name="languages" value="HTML"> HTML</label><br>
+            <label><input type="checkbox" name="languages" value="CSS"> CSS</label><br>
+            <label><input type="checkbox" name="languages" value="JavaScript"> JavaScript</label><br>
+            <label><input type="checkbox" name="languages" value="Python"> Python</label><br>
+            <label><input type="checkbox" name="languages" value="Java"> Java</label><br>
+        </div>
+
+        <div class="dropdown-group">
+            <label for="preferred-language">Select your preferred programming language:</label>
+            <select id="preferred-language" name="preferred-language">
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="cpp">C++</option>
+                <option value="ruby">Ruby</option>
+                <option value="rust">Rust</option>
+            </select>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

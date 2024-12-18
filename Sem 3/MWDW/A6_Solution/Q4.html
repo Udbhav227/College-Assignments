@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gender Classification Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    table {
+      width: 60%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    th,
+    td {
+      border: 2px solid #000000;
+      padding: 5px 10px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #e4cdce;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #f2e8e9;
+    }
+
+    tr:first-child {
+      background-color: #b32b15;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h2>Gender Classification Table</h2>
+  <table>
+    <tr>
+      <th rowspan="3">Religion</th>
+      <th colspan="4">Gender Classification</th>
+      <th rowspan="3">No. of Population (In %)</th>
+    </tr>
+    <tr>
+      <th colspan="2">Male</th>
+      <th colspan="2">Female</th>
+    </tr>
+    <tr>
+      <th>Literates</th>
+      <th>Illiterates</th>
+      <th>Literates</th>
+      <th>Illiterates</th>
+    </tr>
+    <tr>
+      <td rowspan="2">Hindu</td>
+      <td colspan="2">30</td>
+      <td colspan="2">30</td>
+      <td rowspan="2">60</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>14</td>
+      <td>10</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Muslim</td>
+      <td colspan="2">08</td>
+      <td colspan="2">12</td>
+      <td rowspan="2">20</td>
+    </tr>
+    <tr>
+      <td>06</td>
+      <td>06</td>
+      <td>05</td>
+      <td>03</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Christians</td>
+      <td colspan="2">07</td>
+      <td colspan="2">08</td>
+      <td rowspan="2">15</td>
+    </tr>
+    <tr>
+      <td>05</td>
+      <td>02</td>
+      <td>06</td>
+      <td>02</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Sikh</td>
+      <td colspan="2">03</td>
+      <td colspan="2">02</td>
+      <td rowspan="2">05</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td>01</td>
+      <td>00</td>
+      <td>02</td>
+    </tr>
+  </table>
+</body>
+</html>

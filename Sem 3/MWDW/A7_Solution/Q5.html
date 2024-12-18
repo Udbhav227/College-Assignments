@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            width: 500px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input {
+            width: 95%;
+        }
+
+        button {
+            background-color: #4c7faf;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Flight Booking Form</h2>
+    
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="departure">Departure City:</label>
+            <select id="departure" name="departure" required>
+                <option value="Ranchi">Ranchi</option>
+                <option value="Bhubaneswar">Bhubaneswar</option>
+                <option value="Bombay">Bombay</option>
+                <option value="Chennai">Chennai</option>
+                <option value="New Delhi">New Delhi</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="destination">Destination City:</label>
+            <select id="destination" name="destination" required>
+                <option value="London">London</option>
+                <option value="Paris">Paris</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Berlin">Berlin</option>
+                <option value="Sydney">Sydney</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="departureDate">Departure Date:</label>
+            <input type="date" id="departureDate" name="departureDate" required min="2024-12-14">
+        </div>
+
+        <div class="form-group">
+            <label for="returnDate">Return Date:</label>
+            <input type="date" id="returnDate" name="returnDate" required min="2024-12-14">
+        </div>
+
+        <div class="form-group">
+            <label for="passengers">Number of Passengers:</label>
+            <input type="number" id="passengers" name="passengers" min="1" required>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

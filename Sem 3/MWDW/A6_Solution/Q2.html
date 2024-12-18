@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        colgroup col:nth-child(2) {
+            width: 150px;
+        }
+        colgroup col:nth-child(4) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Student Information</caption>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Amar</td>
+                <td>20</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Akbar</td>
+                <td>22</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Anthony</td>
+                <td>21</td>
+                <td>A</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
