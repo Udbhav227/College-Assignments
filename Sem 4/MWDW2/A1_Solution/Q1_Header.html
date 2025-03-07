@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Header</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: rgba(0, 0, 0, 0.5); 
+        }
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 22px;
+        }
+        .header-bg {
+            height: 100vh;
+        }
+        .content {
+            height: 200vh;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="logo">LOGO</div>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="header-bg"></div>
+    <div class="content">
+        <h2>Scroll Down</h2>
+        <p>As you scroll down, the header text color will change.</p>
+    </div>
+    
+    <script>
+        window.addEventListener("scroll", function() {
+            let header = document.getElementById("header");
+            let scrollPosition = window.scrollY;
+            if (scrollPosition > 150) {
+                header.style.color = "black";
+                header.querySelectorAll(".nav a").forEach(link => link.style.color = "black");
+            } else {
+                header.style.color = "white";
+                header.querySelectorAll(".nav a").forEach(link => link.style.color = "white");
+            }
+        });
+    </script>
+</body>
+</html>
