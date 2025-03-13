@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Audio Player</title>
+    <style>
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <audio id="audioPlayer">
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+    <button id="playPauseButton">Play/Pause</button>
+    <button id="muteButton">Mute/Unmute</button>
+
+    <script>
+        $(document).ready(function() {
+            const audio = $("#audioPlayer")[0];
+
+            $("#playPauseButton").click(function() {
+                if (audio.paused) {
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
+            });
+
+            $("#muteButton").click(function() {
+                audio.muted = !audio.muted;
+            });
+        });
+    </script>
+</body>
+</html>

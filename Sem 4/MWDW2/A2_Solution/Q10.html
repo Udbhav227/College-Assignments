@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+
+        /* Desktop View */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            table {
+                border: none;
+            }
+
+            thead {
+                display: none;
+            }
+
+            tr {
+                display: block;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                padding: 10px;
+                background-color: #f9f9f9;
+            }
+
+            td {
+                display: block;
+                text-align: right;
+                border: none;
+                padding: 5px;
+                font-size: 14px;
+                position: relative;
+            }
+
+            td::before {
+                content: attr(data-label);
+                font-weight: bold;
+                text-transform: uppercase;
+                position: absolute;
+                left: 10px;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Employee Data</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Employee ID">EMP001</td>
+                <td data-label="Name">Alice</td>
+                <td data-label="Age">25</td>
+                <td data-label="Department">IT</td>
+                <td data-label="Salary">$70,000</td>
+                <td data-label="Location">New York</td>
+            </tr>
+            <tr>
+                <td data-label="Employee ID">EMP002</td>
+                <td data-label="Name">Bob</td>
+                <td data-label="Age">30</td>
+                <td data-label="Department">HR</td>
+                <td data-label="Salary">$60,000</td>
+                <td data-label="Location">Los Angeles</td>
+            </tr>
+            <tr>
+                <td data-label="Employee ID">EMP003</td>
+                <td data-label="Name">Charlie</td>
+                <td data-label="Age">22</td>
+                <td data-label="Department">Marketing</td>
+                <td data-label="Salary">$50,000</td>
+                <td data-label="Location">Chicago</td>
+            </tr>
+            <tr>
+                <td data-label="Employee ID">EMP004</td>
+                <td data-label="Name">David</td>
+                <td data-label="Age">28</td>
+                <td data-label="Department">Sales</td>
+                <td data-label="Salary">$65,000</td>
+                <td data-label="Location">Houston</td>
+            </tr>
+            <tr>
+                <td data-label="Employee ID">EMP005</td>
+                <td data-label="Name">Eve</td>
+                <td data-label="Age">35</td>
+                <td data-label="Department">Finance</td>
+                <td data-label="Salary">$80,000</td>
+                <td data-label="Location">Miami</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
