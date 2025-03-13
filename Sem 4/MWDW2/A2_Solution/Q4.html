@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      width: 260px;
+    }
+  </style>
+  <title>Progress bar</title>
+</head>
+<body>
+  <audio id="task4Audio" src="audio.mp3"></audio>
+  <button onclick="togglePlayPause()">Play/Pause</button>
+  <p>Volume: </p>
+  <input type="range" id="volumeControl" min="0" max="1" step="0.1" oninput="setVolume(this.value)">
+  <p>Progress: </p>
+  <input type="range" id="progressBar" min="0" max="100" step="1" oninput="setProgress(this.value)">
+
+  <script>
+      const audio = document.getElementById("task4Audio");
+      audio.autoplay = true;
+      function togglePlayPause() {
+          if (audio.paused) audio.play();
+          else audio.pause();
+      }
+      function setVolume(value) {
+          audio.volume = value;
+      }
+      function setProgress(value) {
+          audio.currentTime = (value / 100) * audio.duration;
+      }
+  </script>
+</body>
+</html>

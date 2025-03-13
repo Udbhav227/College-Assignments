@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Video</title>
+    <style>
+      #videoContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+        margin: auto;
+      }
+
+      #controls {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+        justify-content: center;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      input[type="range"] {
+        width: 100%;
+        margin-top: 10px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div id="videoContainer">
+      <video id="movieVideo" width="500">
+        <source src="video-720.mp4" type="video/mp4" />
+        Your browser does not support the video element.
+      </video>
+
+      <div id="controls">
+        <button id="playPauseButton">Play/Pause</button>
+      </div>
+
+      <input type="range" id="progressBar" min="0" max="100" step="1" value="0"/>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+        const $video = $("#movieVideo");
+        const $progressBar = $("#progressBar");
+
+        $("#playPauseButton").click(function() {
+          if ($video[0].paused) $video[0].play();
+          else $video[0].pause();
+        });
+
+        $video.on("timeupdate", function() {
+          const progress = ($video[0].currentTime / $video[0].duration) * 100;
+          $progressBar.val(progress);
+        });
+
+        $progressBar.on("input", function() {
+          $video[0].currentTime = ($progressBar.val() / 100) * $video[0].duration;
+        });
+      });
+    </script>
+  </body>
+</html>
