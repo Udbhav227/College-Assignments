@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery List Manipulation</title>
+  <style>
+    ul {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      padding: 10px;
+    }
+    li {
+      margin: 10px 0;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('li').each(function () {
+        $(this).html('<b>' + $(this).text() + '</b>');
+      });
+
+      $('li:eq(0)').css('color', 'green');
+      $('li:eq(3)').css('color', 'yellow');
+
+      // Dynamically add a div with content
+      $('body').append(`
+        <div style="margin: 30px; padding: 15px; background-color: #f0f0f0; border-radius: 10px;">
+          <h1>Welcome to SOA</h1>
+          <p>This content was added dynamically using jQuery!</p>
+        </div>
+      `);
+    });
+  </script>
+</head>
+<body>
+
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+  </ul>
+
+</body>
+</html>

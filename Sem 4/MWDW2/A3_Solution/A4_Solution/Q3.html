@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Semester Subjects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    a {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('h1, h2, h3, h4, h5, h6').click(function () {
+        $('h1, h2, h3, h4, h5, h6').hide();
+      });
+
+      $('a').click(function (e) {
+        e.preventDefault();
+        $(this).attr('href', 'https://www.soa.com');
+        $(this).text('www.soa.com');
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <h1>ALA</h1>
+  <h2>AD 2</h2>
+  <h3>MWDW 2</h3>
+  <h4>IM</h4>
+  <h5>IDM</h5>
+  <h6>COA</h6>
+
+  <a href="https://www.google.com" target="_blank">www.Google.com</a>
+
+</body>
+</html>

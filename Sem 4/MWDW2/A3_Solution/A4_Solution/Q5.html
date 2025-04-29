@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SOA Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+
+    .container {
+      width: 400px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    img {
+      width: 100px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    select {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .radio-group {
+      margin: 10px 0;
+      text-align: left;
+      padding-left: 5%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      text-align: left;
+      padding-left: 5%;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    input[type="submit"]:disabled {
+      background-color: #aaa;
+      cursor: not-allowed;
+    }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#terms').change(function () {
+        $('#submitBtn').prop('disabled', !this.checked);
+      });
+
+      $('#registrationForm').submit(function (e) {
+        let isEmpty = false;
+        $('#registrationForm input[type="text"], #registrationForm input[type="password"], #registrationForm input[type="email"]').each(function () {
+          if ($(this).val().trim() === '') {
+            isEmpty = true;
+          }
+        });
+
+        if (isEmpty) {
+          alert("Please fill in all required fields.");
+          e.preventDefault();
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Replace this src with your actual SOA logo path if needed -->
+    <img src="logo.jpg" alt="SOA Logo">
+
+    <form id="registrationForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Create a password">
+
+      <div class="radio-group">
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male"> Male
+        <input type="radio" id="female" name="gender" value="female"> Female
+      </div>
+
+      <label for="department">Department</label>
+      <select id="department" name="department">
+        <option value="">Select Department</option>
+        <option value="CSE">CSE</option>
+        <option value="IT">IT</option>
+        <option value="ECE">ECE</option>
+        <option value="ME">ME</option>
+      </select>
+
+      <div style="text-align: left; padding-left: 5%;">
+        <input type="checkbox" id="terms"> I agree to the terms & conditions
+      </div>
+
+      <input type="submit" id="submitBtn" value="Register" disabled>
+    </form>
+  </div>
+
+</body>
+</html>
