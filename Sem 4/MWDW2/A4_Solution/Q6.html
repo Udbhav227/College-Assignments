@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zebra Table with Button Resize</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 60%;
+      margin: 50px auto;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #444;
+      color: white;
+    }
+
+    #resizeBtn {
+      display: block;
+      margin: 30px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('table tr:even').css('background-color', '#f2f2f2');
+
+      $('#resizeBtn').click(function () {
+        $(this).css({
+          width: '300px',
+          height: '500px'
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Department</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Udbhav</td><td>CSE</td></tr>
+      <tr><td>2</td><td>Riya</td><td>IT</td></tr>
+      <tr><td>3</td><td>Aryan</td><td>ECE</td></tr>
+      <tr><td>4</td><td>Divya</td><td>ME</td></tr>
+      <tr><td>5</td><td>Neha</td><td>EEE</td></tr>
+    </tbody>
+  </table>
+
+  <button id="resizeBtn">Resize</button>
+
+</body>
+</html>

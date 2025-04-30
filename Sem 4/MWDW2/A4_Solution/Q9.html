@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Class Toggle</title>
+  <style>
+    #myDiv {
+      width: 300px;
+      height: 150px;
+      background-color: lightgray;
+      margin: 30px auto;
+      line-height: 150px;
+      text-align: center;
+      font-weight: bold;
+      font-family: Arial;
+      transition: all 0.3s ease;
+    }
+
+    #myDiv.highlight {
+      background-color: purple;
+      color: white;
+      opacity: 1;
+    }
+
+    .dim {
+      opacity: 0.5;
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#highlightBtn').click(function () {
+        $('#myDiv').removeClass('dim').addClass('highlight');
+      });
+
+      $('#dimBtn').click(function () {
+        $('#myDiv').removeClass('highlight').addClass('dim');
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <div id="myDiv">This is a Div</div>
+
+  <div style="text-align: center;">
+    <button id="highlightBtn">Add Highlight</button>
+    <button id="dimBtn">Add Dim</button>
+  </div>
+
+</body>
+</html>
