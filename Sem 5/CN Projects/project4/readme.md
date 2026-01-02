@@ -1,4 +1,4 @@
-## CNC Project 3
+## CNC Project 4
 
 Project Report – [View Report](./report.md)
 
