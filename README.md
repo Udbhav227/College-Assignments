@@ -9,8 +9,8 @@ It contains solutions, code snippets, projects, and reference materials organize
 
 ## 🗂️ Index
 
-* #### 📂 [Semester 5](./Sem%205/PPWJ)
-* #### 📂 [Semester 4](./Sem%204/MWDW2)
+* #### 📂 [Semester 5](./Sem%205)
+* #### 📂 [Semester 4](./Sem%204)
 * #### 📂 [Semester 3](./Sem%203)
 * #### 📂 [Semester 2](./Sem%202)
 * #### 📂 [Semester 1](./Sem%201)
