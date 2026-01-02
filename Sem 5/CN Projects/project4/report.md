@@ -66,7 +66,7 @@ The critical requirement of shared Internet access was resolved through the conf
 
 ### 7. References
 
-[1] T. Lammle, *CCNA Certification Study Guide, Volume 2: Exam 200-301*, 1st ed. Indianapolis, IN: Sybex, 2020.
+[1] CompTIA Network+ N10-008 Certification Guide by Glen D. Singh, 2nd Edition, Packt publication.
 
 [2] W. Odom, *CCNA 200-301 Official Cert Guide, Volume 1*, 1st ed. Cisco Press, 2019.
 
