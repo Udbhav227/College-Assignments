@@ -64,7 +64,7 @@ The "Centralised File-Sharing System with DHCP & FTP Server" project successfull
 
 ### **7. References**
 
-[1] W. Odom, *CCNA 200-301 Official Cert Guide, Volume 1*. Indianapolis, IN: Cisco Press, 2019.
+[1] CompTIA Network+ N10-008 Certification Guide by Glen D. Singh, 2nd Edition, Packt publication.
 
 [2] Cisco Systems, "Configure DHCP Relay Agent on a Cisco Router," *Cisco.com*, 2023. [Online]. Available: [https://www.cisco.com/c/en/us/support/docs/ip/dynamic-address-allocation-resolution/27470-100.html](https://www.cisco.com/c/en/us/support/docs/ip/dynamic-address-allocation-resolution/27470-100.html).
 
