@@ -43,7 +43,7 @@ The topology diagram illustrates the successfully cabled network, with all link 
 
 #### **Connectivity Testing (Ping)**
 
-![Ping Test: BO-PC to HO-PC](ss1_pingtest1.png)
+![Ping Test: BO-PC to HO-PC](ss2_pingtest1.png)
 
 ![Ping Test: BO-PC to 8.8.8.8](ss3_pingtest2.png)
 
