@@ -17,6 +17,8 @@ The scenario provided involves a single-office organization divided into three f
 **4.1 Network Topology & Design**
 The network was designed using a star-like topology (Hub-and-Spoke). The IT Router (`R-IT`) acts as the central hub, connected via Serial WAN links to two spoke routers: HR (`R-HR`) and Finance (`R-Finance`). Each router services a local Gigabit Ethernet LAN containing Cisco 2960 switches and end devices. The addressing scheme utilizes `192.168.10.0/24` for IT, `192.168.20.0/24` for HR, and `192.168.30.0/24` for Finance, with `/30` subnets for the WAN links to conserve address space.
 
+![Figure 0: Topology](ss0_topology.png)
+
 **4.2 Configuration Strategy**
 The configuration process was executed in three phases. First, basic connectivity was established by assigning IP addresses to router interfaces and setting clock rates on DCE serial interfaces. Second, connectivity was enabled using Static Routing. `R-IT` was configured with specific routes to HR and Finance, while the spoke routers were configured with "Gateway of Last Resort" (Default Routes) pointing back to IT. Finally, the IT Server was configured with three distinct DHCP pools. To facilitate IP assignment across routers, the `ip helper-address` command was applied to the LAN interfaces of the HR and Finance routers, converting broadcast requests into unicast packets directed at the server.
 
